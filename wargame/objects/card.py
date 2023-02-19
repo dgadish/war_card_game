@@ -37,8 +37,8 @@ class Card:
     """A standard playing card with suit and rank
 
     Attributes:
-        suit (str): Must be one of {"hearts", "diamonds", "spades", "clubs"}
-        rank (str): Must be one of {
+        suit (Suit): Must be one of {"hearts", "diamonds", "spades", "clubs"}
+        rank (Rank): Must be one of {
                                         "two",
                                         "three",
                                         "four",
@@ -53,6 +53,7 @@ class Card:
                                         "king",
                                         "ace"
                                     }
+
     """
 
     suit = Suit()
@@ -62,7 +63,7 @@ class Card:
         self.suit = suit.lower()
         self.rank = rank.lower()
         # Set numeric value to allow for comparison of different cards
-        self.value = constants.VALUE_DICT[rank.lower()]
+        self.value: int = constants.VALUE_DICT[rank.lower()]
 
     def __str__(self) -> str:
         return self.rank.capitalize() + " of " + self.suit.capitalize()
