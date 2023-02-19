@@ -1,0 +1,10 @@
+
+repos:
+  - repo: local
+    hooks:
+      - id: check_sript
+        name: check_script
+        entry: ./shell_scripts/pre_commit.sh
+        language: script
+        types: [python]
+        always_run: true

@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "war-game"
+version = "0.1.0"
+description = ""
+authors = ["Daniel <dgadish99@gmail.com>"]
+readme = "README.md"
+packages = [{include = "war_game"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flake8 = "^6.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+mypy = "^1.0.1"
+isort = "^5.12.0"
+pre-commit = "^3.0.4"
+pytest = "^7.2.1"
+pytest-randomly = "^3.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+skip = [".md"]
+
+[tool.pylint.'MESSAGES CONTROL']
+max-line-length = 88
+disable = "no-name-in-module, no-member, invalid-name"
