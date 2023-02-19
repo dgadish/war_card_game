@@ -1,6 +1,6 @@
+#!/bin/sh
 pytest .
 isort -c .
-black -c .
-pylint -rn -sn war_game
-pylint -rn -sn tests
+black --check .
+flake8 --max-line-length 88
 mypy .

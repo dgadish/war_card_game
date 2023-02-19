@@ -8,7 +8,7 @@ packages = [{include = "war_game"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pylint = "^2.16.2"
+flake8 = "^6.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -28,5 +28,5 @@ profile = "black"
 skip = [".md"]
 
 [tool.pylint.'MESSAGES CONTROL']
-max-line-length = 120
+max-line-length = 88
 disable = "no-name-in-module, no-member, invalid-name"
