@@ -13,10 +13,11 @@ class Deck:
 
     Attributes:
         all_cards (list[Card]): list of all cards within the deck
+
     """
 
     def __init__(self) -> None:
-        self.all_cards = []
+        self.all_cards: list[Card] = []
 
         for suit in SUITS:
             for rank in RANKS:
