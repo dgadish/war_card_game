@@ -6,7 +6,7 @@ import wargame.objects.constants as constants
 
 
 class Suit:
-    """Suit class to ensure valid suit when Card class is instantiate"""
+    """Suit class to ensure valid suit when Card class is instantiated"""
 
     def __get__(self, obj, objtype=None):
         return self.value
@@ -20,7 +20,7 @@ class Suit:
 
 
 class Rank:
-    """Rank class to ensure valid suit when Card class is instantiate"""
+    """Rank class to ensure valid suit when Card class is instantiated"""
 
     def __get__(self, obj, objtype=None):
         return self.value
