@@ -1,4 +1,6 @@
-"Tests for the Card class"
+"""
+Tests for the Card class
+"""
 
 import pytest
 
