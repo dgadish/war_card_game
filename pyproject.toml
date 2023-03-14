@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["Daniel <dgadish99@gmail.com>"]
 readme = "README.md"
-packages = [{include = "war_game"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"

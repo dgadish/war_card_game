@@ -19,9 +19,9 @@ class Player:
         return f"Player: {self.name}\nNumber of Cards: {len(self.all_cards)}"
 
     def remove_card(self) -> Card:
-        """Remove the top card from the deck"""
+        """Remove the top card from the players card list"""
         return self.all_cards.pop(0)
 
     def add_cards(self, new_cards: list[Card]) -> None:
-        """Add cards to the players hand"""
+        """Add cards to the bottom of the players card set"""
         self.all_cards.extend(new_cards)
