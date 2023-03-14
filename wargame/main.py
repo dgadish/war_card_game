@@ -60,6 +60,18 @@ while game_on:
             print(f"Player Two wins round {round_num}!")
             at_war = False
         else:
+            if len(player_one.all_cards) == 0:
+                print("Player One is out of cards! Player Two wins!")
+                print(f"Rounds played: {round_num}")
+                game_on = False
+                break
+
+            if len(player_two.all_cards) == 0:
+                print("Player Two is out of cards! Player One wins!")
+                print(f"Rounds played: {round_num}")
+                game_on = False
+                break
+
             print("It's War!!!")
             war_card_count = 5
             if len(player_one.all_cards) < 5:
